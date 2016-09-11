@@ -30,7 +30,7 @@
 		<mkdir dir="${testreportsdir}" />
 	</target>
 
-	<target depends="compile, inittest" name="TestFlatRateDiscountStrategy">
+	<target depends="compile, inittest" name="test">
 		<junit printsummary="on" haltonfailure="yes" fork="yes">
 			<classpath refid="TravisExercise.classpath"/>
 			<formatter type="xml" />
