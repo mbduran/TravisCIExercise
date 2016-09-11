@@ -9,7 +9,7 @@ public class TestFlatRateDiscountStrategy {
 	@Test
 	public void testFlatRateDiscount1() {
 		Order order = new Order("John", 200.24f);
-		float discount = 10; 
+		float discount = 5; 
 		FlatRateDiscountStrategy strategy = new FlatRateDiscountStrategy(discount);
 		order.setStrategy(strategy);
 		assertEquals(190.24, order.getDiscountedPrice(), 0.00001);
